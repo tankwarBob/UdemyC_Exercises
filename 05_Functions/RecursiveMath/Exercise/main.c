@@ -8,8 +8,8 @@ void tests();
 
 int main()
 {
-    uint32_t lower_value = 3;
-    uint32_t upper_value = 5;
+    uint32_t lower_value = 1;
+    uint32_t upper_value = 10;
 
     printf("sum: %u\n", recursive_sum(lower_value, upper_value));
     printf("product: %u\n", recursive_product(lower_value, upper_value));
