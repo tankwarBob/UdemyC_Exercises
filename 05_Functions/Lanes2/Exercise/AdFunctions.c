@@ -6,11 +6,7 @@
 
 void  print_scene(float speed_mps, uint32_t lane_idx){
 
-    enum LaneAssociationType lane;
-
-    lane = lane_idx;
-
-    switch (lane)
+    switch (lane_idx)
     {
     case LANE_ASSOCIATION_TYPE_RIGHT:
         printf("  L   C   R\n");
