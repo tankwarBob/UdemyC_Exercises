@@ -11,16 +11,19 @@ void test_cases();
 
 int main()
 {
-    int32_t array1[] = {-3, -2, -1, 0, 1, 2, 3};
-    int32_t array2[] = {-3, -2, -1, 0, 1, 2, 4};
-    size_t length = 7;
+    //int32_t array1[] = {-3, -2, -1, 0, 1, 2, 3};
+    int32_t array1[] = {-2, -1, 0, 1, 2};
+    //int32_t array2[] = {-3, -2, -1, 0, 1, 2, 4};
+    int32_t array2[] = {-1, 0, 1, 2, 4};
+    size_t length = 5;
 
     printf("array_equal: %d\n", array_equal(array1, length, array2, length));
 
     array_clamp(array1, length, -1, 1);
     print_int32_array(array1, length);
 
-    array_fill_n(array2, length, 5, -1337);
+    //array_fill_n(array2, length, 5, -1337);
+    array_fill_n(array1, length, 2, -3);
     print_int32_array(array2, length);
 
     array_reverse(array1, length);
